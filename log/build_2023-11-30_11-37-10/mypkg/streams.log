@@ -1,0 +1,27 @@
+[1.266s] Invoking command in '/home/teresa/ros2_ws/src/mypkg': PYTHONPATH=/home/teresa/ros2_ws/src/mypkg/build/mypkg/prefix_override:/home/teresa/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/mypkg build --build-base /home/teresa/ros2_ws/src/mypkg/build/mypkg/build install --record /home/teresa/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed
+[1.484s] running egg_info
+[1.485s] writing build/mypkg/mypkg.egg-info/PKG-INFO
+[1.486s] writing dependency_links to build/mypkg/mypkg.egg-info/dependency_links.txt
+[1.486s] writing entry points to build/mypkg/mypkg.egg-info/entry_points.txt
+[1.486s] writing requirements to build/mypkg/mypkg.egg-info/requires.txt
+[1.486s] writing top-level names to build/mypkg/mypkg.egg-info/top_level.txt
+[1.558s] reading manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.559s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.559s] running build
+[1.560s] running build_py
+[1.560s] copying mypkg/listener.py -> /home/teresa/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.560s] running install
+[1.561s] running install_lib
+[1.563s] copying /home/teresa/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/listener.py -> /home/teresa/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.563s] byte-compiling /home/teresa/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/listener.py to listener.cpython-38.pyc
+[1.565s] running install_data
+[1.565s] copying package.xml -> /home/teresa/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[1.566s] copying launch/talk_listen.launch.py -> /home/teresa/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[1.566s] running install_egg_info
+[1.568s] removing '/home/teresa/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info' (and everything under it)
+[1.568s] Copying build/mypkg/mypkg.egg-info to /home/teresa/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info
+[1.570s] running install_scripts
+[1.589s] Installing listener script to /home/teresa/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.589s] Installing talker script to /home/teresa/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.589s] writing list of installed files to '/home/teresa/ros2_ws/src/mypkg/build/mypkg/install.log'
+[1.612s] Invoked command in '/home/teresa/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/teresa/ros2_ws/src/mypkg/build/mypkg/prefix_override:/home/teresa/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/mypkg build --build-base /home/teresa/ros2_ws/src/mypkg/build/mypkg/build install --record /home/teresa/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed
