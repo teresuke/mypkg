@@ -2,6 +2,7 @@
 
 [![test](https://github.com/teresuke/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/teresuke/mypkg/actions/workflows/test.yml)
 
+## 紹介
 これはロボットシステム学で使われているコードである。
 ROS2を使い、talkerとlistenerの二つを通信するプログラムである。
 0.5秒ごとに数字を1ずつ増やしていく。
@@ -13,7 +14,7 @@ ros2のリポジトリを作る。
   * サブスクライバー(listener)
   * トピックからメッセージを受け取り、talker.pyから受け取った内容を標準出力する。
 ## トピック
-  * 
+  * パブリッシャがサブスクライバーにデータを送る。 
 
 ## 実行するまでのやり方
 * ➀　二つのターミナルを開く。二つの端末を端末1$、端末2$とする。
@@ -28,8 +29,22 @@ ros2 run mypkg listener
 ```
 と実行する
 
+## 実行結果
 
-## 他の実行方法
+   ```
+[INFO] [1703742678.270138053] [listener]: Listen: 0
+[INFO] [1703742678.745021817] [listener]: Listen: 1
+[INFO] [1703742679.245405478] [listener]: Listen: 2
+[INFO] [1703742679.745058842] [listener]: Listen: 3
+[INFO] [1703742680.245325938] [listener]: Listen: 4
+[INFO] [1703742680.745370106] [listener]: Listen: 5
+[INFO] [1703742681.245143670] [listener]: Listen: 6
+[INFO] [1703742681.745156353] [listener]: Listen: 7
+[INFO] [1703742682.245437660] [listener]: Listen: 8
+
+   ```
+
+## launchファイル
 ➀ 以下のように実行する。
 ```
 ros2 launch mypkg talk_listen.launch.py
@@ -55,22 +70,6 @@ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1703773030.066744086] [listener]: Listen: 11
 
 ```
-
-## 実行結果
-
-   ```
-[INFO] [1703742678.270138053] [listener]: Listen: 0
-[INFO] [1703742678.745021817] [listener]: Listen: 1
-[INFO] [1703742679.245405478] [listener]: Listen: 2
-[INFO] [1703742679.745058842] [listener]: Listen: 3
-[INFO] [1703742680.245325938] [listener]: Listen: 4
-[INFO] [1703742680.745370106] [listener]: Listen: 5
-[INFO] [1703742681.245143670] [listener]: Listen: 6
-[INFO] [1703742681.745156353] [listener]: Listen: 7
-[INFO] [1703742682.245437660] [listener]: Listen: 8
-
-   ```
-
 
 ## 必要なソフトウェア
   * python
