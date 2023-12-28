@@ -1,11 +1,10 @@
-## 課題2の説明
+## mypkg 
+
+[![test](https://github.com/teresuke/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/teresuke/mypkg/actions/workflows/test.yml)
+
 これはロボットシステム学で使われているコードである。
 ROS2を使い、talkerとlistenerの二つを通信するプログラムである。
 0.5秒ごとに数字を1ずつ増やしていく。
-
-## ros2_ws 
-
-コード必須
 
 ros2のリポジトリを作る。
 ## ノード 
