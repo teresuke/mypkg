@@ -34,7 +34,7 @@ ros2 run mypkg listener
 ```
 と実行する
 
-## 実行結果
+* ④ 実行結果
 
    ```
 [INFO] [1703742678.270138053] [listener]: Listen: 0
