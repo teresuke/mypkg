@@ -1,4 +1,4 @@
-## mypkg 
+# mypkg 
 
 [![test](https://github.com/teresuke/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/teresuke/mypkg/actions/workflows/test.yml)
 
