@@ -2,10 +2,8 @@
 
 [![test](https://github.com/teresuke/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/teresuke/mypkg/actions/workflows/test.yml)
 
-## 紹介
-これはロボットシステム学で使われているコードである。
-ROS2を使い、talkerとlistenerの二つを通信するプログラムである。
-0.5秒ごとに数字を1ずつ増やしていく。
+## 課題
+これはロボットシステム学の課題2である。
 
 ros2のリポジトリを作る。
 ## ノード 
@@ -14,6 +12,8 @@ ros2のリポジトリを作る。
   * サブスクライバー(listener)
   * トピックからメッセージを受け取り、talker.pyから受け取った内容を標準出力する。
 ## トピック
+  * ROS2内でノードを通信するときに使うデータの流れのこと。talkerからデータを受信してそのデータを
+listenerに送信する。talkerとlistenerをつなぎ、複数のノードの間でデータを共有する。
   * talkerからlistenerにデータを送る。一ずつカウントしていく。 
     
 ## 実行するまでのやり方
@@ -22,6 +22,7 @@ ros2のリポジトリを作る。
 ```
 ros2 run mypkg talker
 ```
+と実行
 ```
 
 ```
@@ -78,6 +79,9 @@ ros2 launch mypkg talk_listen.launch.py
 ➀  git clone https://github.com/teresuke/mypkg.git
 ➁  cd ros2_ws
 
+## テスト内容
+* 2023年に上田隆一先生のロボットシステム学の授業で用いられたテストに利用するコンテナを使用しています。
+* https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2
 ## 必要なソフトウェア
   * python
   * テスト済み　3.7～3.10
