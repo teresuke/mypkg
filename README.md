@@ -36,7 +36,7 @@ ros2 run mypkg listener
 
 * ④ 実行結果
 
-   ```
+```
 [INFO] [1703742678.270138053] [listener]: Listen: 0
 [INFO] [1703742678.745021817] [listener]: Listen: 1
 [INFO] [1703742679.245405478] [listener]: Listen: 2
@@ -46,8 +46,7 @@ ros2 run mypkg listener
 [INFO] [1703742681.245143670] [listener]: Listen: 6
 [INFO] [1703742681.745156353] [listener]: Listen: 7
 [INFO] [1703742682.245437660] [listener]: Listen: 8
-
-   ```
+```
 
 ## launchファイル
 ➀ 以下のように実行する。
