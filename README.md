@@ -76,15 +76,21 @@ ros2 launch mypkg talk_listen.launch.py
 
 ```
 ## インストール方法
-➀  git clone https://github.com/teresuke/mypkg.git
-➁  cd ros2_ws
-
+➀  クローンする
+```
+git clone https://github.com/teresuke/mypkg.git
+```
+➁  ディレクトリに移動
+```
+cd ros2_ws
+```
 ## テスト内容
-* 2023年に上田隆一先生のロボットシステム学の授業で用いられたテストに利用するコンテナを使用しています。
-* https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2
+* 2023年に上田隆一先生のロボットシステム学の授業で用いられたテストに利用するコンテナを使用しています。 
+```
+https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2
+```
 ## 必要なソフトウェア
   * python
-  * テスト済み　3.7～3.10
   * ROS2 foxy
 ## テスト環境
   * Ubuntu 20.04
