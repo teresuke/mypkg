@@ -22,6 +22,10 @@ ros2のリポジトリを作る。
 ```
 ros2 run mypkg talker
 ```
+```
+
+```
+何も出ない。
 
 * ➂  端末2$に
 ```
@@ -70,6 +74,9 @@ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1703773030.066744086] [listener]: Listen: 11
 
 ```
+## インストール方法
+➀  git clone https://github.com/teresuke/mypkg.git
+➁  cd ros2_ws
 
 ## 必要なソフトウェア
   * python
