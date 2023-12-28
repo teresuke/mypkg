@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+# SPDX=FileCopyrightText: 2023 Shunsuke Otani
+# SPDX-License-Identifier: BSD-3-Clause
+
 import launch
 import launch.actions
 import launch.substitutions
