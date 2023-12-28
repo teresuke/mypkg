@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/python3
+# SPDX=FileCopyrightText: 2023 Shunsuke Otani
+# SPDX-License-Identifier: BSD-3-Clause
 
 dir=~
 [ "$1" != "" ] && dir="$1"   #引数があったら、そちらをホームに変える。
