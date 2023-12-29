@@ -5,7 +5,6 @@
 ## 課題
 これはロボットシステム学の課題2である。
 
-ros2のリポジトリを作る。
 ## ノード 
   * パブリッシャ(talker)
   * 実行すると0.5秒ごとに数字が1増えていく。
@@ -46,33 +45,6 @@ ros2 run mypkg listener
 [INFO] [1703742681.245143670] [listener]: Listen: 6
 [INFO] [1703742681.745156353] [listener]: Listen: 7
 [INFO] [1703742682.245437660] [listener]: Listen: 8
-```
-
-## launchファイル
-➀ 以下のように実行する。
-```
-ros2 launch mypkg talk_listen.launch.py
-```
-
-➁ 実行結果が下のようになる。
-```
-[INFO] [launch]: All log files can be found below /home/teresa/.ros/log/2023-12-28-23-17-03-756393-Shunsuke-23630
-[INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [talker-1]: process started with pid [23632]
-[INFO] [listener-2]: process started with pid [23634]
-[listener-2] [INFO] [1703773024.573352936] [listener]: Listen: 0
-[listener-2] [INFO] [1703773025.066765814] [listener]: Listen: 1
-[listener-2] [INFO] [1703773025.566138127] [listener]: Listen: 2
-[listener-2] [INFO] [1703773026.066300581] [listener]: Listen: 3
-[listener-2] [INFO] [1703773026.566372063] [listener]: Listen: 4
-[listener-2] [INFO] [1703773027.066459991] [listener]: Listen: 5
-[listener-2] [INFO] [1703773027.566437296] [listener]: Listen: 6
-[listener-2] [INFO] [1703773028.066514275] [listener]: Listen: 7
-[listener-2] [INFO] [1703773028.566751857] [listener]: Listen: 8
-[listener-2] [INFO] [1703773029.066722078] [listener]: Listen: 9
-[listener-2] [INFO] [1703773029.566191497] [listener]: Listen: 10
-[listener-2] [INFO] [1703773030.066744086] [listener]: Listen: 11
-
 ```
 ## インストール方法
 ➀  クローンする
