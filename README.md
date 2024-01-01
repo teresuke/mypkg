@@ -46,15 +46,7 @@ ros2 run mypkg listener
 [INFO] [1703742681.745156353] [listener]: Listen: 7
 [INFO] [1703742682.245437660] [listener]: Listen: 8
 ```
-## インストール方法
-➀  クローンする
-```
-git clone https://github.com/teresuke/mypkg.git
-```
-➁  ディレクトリに移動
-```
-cd ros2_ws
-```
+
 ## テスト内容
 * 2023年に上田隆一先生のロボットシステム学の授業で用いられたテストに利用するコンテナを使用しています。 
 ```
