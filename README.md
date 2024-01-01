@@ -50,7 +50,7 @@ ros2 run mypkg listener
 ## テスト内容
 * 2023年に上田隆一先生のロボットシステム学の授業で用いられたテストに利用するコンテナを使用しています。 
 ```
-https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2
+https://hub.docker.com/repository/docker/ryuichiueda/ubuntu20.04-ros2
 ```
 ## 必要なソフトウェア
   * python
