@@ -17,7 +17,7 @@
 * ➀　二つのターミナルを開く。二つの端末を端末1$、端末2$とする。
 * ➁　端末1に
 ```
-端末1$ros2 run mypkg talker
+端末1$ ros2 run mypkg talker
 ```
 と実行する。
 ```
@@ -27,7 +27,7 @@
 
 * ➂  端末2に
 ```
-端末2$ros2 run mypkg listener
+端末2$ ros2 run mypkg listener
 ```
 と実行する
 
