@@ -47,6 +47,23 @@ ros2 run mypkg listener
 [INFO] [1703742682.245437660] [listener]: Listen: 8
 ```
 
+## 端末一つで実行するとき
+```
+ros2 launch mypkg talk_listen.launch.py
+```
+
+と実行すると
+```
+[INFO] [launch]: All log files can be found below /home/teresa/.ros/log/2024-01-02-14-47-54-769601-Shunsuke-210
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [212]
+[INFO] [listener-2]: process started with pid [214]
+[listener-2] [INFO] [1704174475.638498199] [listener]: Listen: 0
+[listener-2] [INFO] [1704174476.126395106] [listener]: Listen: 1
+[listener-2] [INFO] [1704174476.626191810] [listener]: Listen: 2
+[listener-2] [INFO] [1704174477.126173443] [listener]: Listen: 3
+```
+
 ## テスト内容
 * 2023年に上田隆一先生のロボットシステム学の授業で用いられたテストに利用するコンテナを使用しています。
 ```
