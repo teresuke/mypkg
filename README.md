@@ -2,24 +2,23 @@
 
 [![test](https://github.com/teresuke/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/teresuke/mypkg/actions/workflows/test.yml)
 
-## 課題
-このリポジトリはtalkerとlistenerとの間で通信をするROS2のパッケージです。
+## 本リポジトリについて
+このリポジトリはtalkerとlistenerとの間で通信をするROS 2のパッケージです。
 
 ## ノード 
-*  パブリッシャ(talker)
+* パブリッシャ(talker)
+  * 実行すると0.5秒ごとにトピック(countup)を通して数字を1ずつ増やしていく。
+* サブスクライバー(listener)
+  * トピック(countup)からメッセージを受け取り、talker.pyから受け取った内容を表示する。
+## トピック(countup)
+  * ROS2内でノードを通信するときに使うデータの経路のこと。
+  * トピック(countup)は16ビット符号付き整数データであり、talker.pyノードからのデータを生成してlistener.pyから受けとる。
 
-実行すると0.5秒ごとにトピックを通して数字を1ずつ増やしていく。
-*  サブスクライバー(listener)
-
-トピックからメッセージを受け取り、talker.pyから受け取った内容を表示する。
-## トピック
-  * ROS2内でノードを通信するときに使うデータの流れのこと。
-    talkerからトピック(countup)に16ビット符号付き整数データを送信するノードである。その後にlistenerはそのデータをトピックからデータを受信する。talkerとlistenerをつなぎ、複数のノードの間でデータを共有する。
 ## 実行するまでのやり方
-* ➀　二つのターミナルを開く。二つの端末を端末1$、端末2$とする。
+* ➀　二つのターミナルを開く。二つのターミナルを端末1$、端末2$とする。
 * ➁　端末1に
 ```
-端末1$ ros2 run mypkg talker
+$ ros2 run mypkg talker
 ```
 と実行する。
 ```
@@ -29,9 +28,9 @@
 
 * ➂  端末2に
 ```
-端末2$ ros2 run mypkg listener
+$ ros2 run mypkg listener
 ```
-と実行する
+と実行する。
 
 * ④ 実行結果
 
@@ -49,7 +48,7 @@
 
 ## 端末一つで実行するとき
 ```
-ros2 launch mypkg talk_listen.launch.py
+$ ros2 launch mypkg talk_listen.launch.py
 ```
 
 と実行すると
@@ -67,12 +66,12 @@ ros2 launch mypkg talk_listen.launch.py
 ## テスト内容
 * 2023年に上田隆一先生のロボットシステム学の授業で用いられたテストに利用するコンテナを使用しています。
 
-* https://hub.docker.com/repository/docker/ryuichiueda/ubuntu20.04-ros2
+* [ryuichiueda/ubuntu22.04-ros2](https://hub.docker.com/repository/docker/ryuichiueda/ubuntu20.04-ros2)
 
 
 ## 必要なソフトウェア
   * python
-  * ROS2 foxy
+  * ROS 2 foxy
 ## 動作確認済み環境
   * Ubuntu 20.04
 ## ライセンス表示
