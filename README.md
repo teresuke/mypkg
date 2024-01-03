@@ -14,9 +14,10 @@
   * ROS2内でノードを通信するときに使うデータの経路のこと。
   * トピック(countup)は16ビット符号付き整数データであり、talker.pyノードからのデータを生成してlistener.pyから受けとり、ログに表示する。
 
-## 実行するまでのやり方
-* ➀　二つのターミナルを開く。二つのターミナルを端末1$、端末2$とする。
-* ➁　端末1に
+## 実行方法
+➀ 2つのターミナルを開く。2つのターミナルを端末1、端末2とする。
+
+➁　端末1に
 ```
 $ ros2 run mypkg talker
 ```
@@ -26,13 +27,13 @@ $ ros2 run mypkg talker
 ```
 何も出ない。
 
-* ➂  端末2に
+➂  端末2に
 ```
 $ ros2 run mypkg listener
 ```
 と実行する。
 
-* ④ 実行結果
+④ 実行結果
 
 ```
 [INFO] [1703742678.270138053] [listener]: Listen: 0
@@ -46,12 +47,13 @@ $ ros2 run mypkg listener
 [INFO] [1703742682.245437660] [listener]: Listen: 8
 ```
 
-## 端末一つで実行するとき
+## 端末1つで実行するとき
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 ```
 
-と実行すると
+と実行する。
+
 ```
 [INFO] [launch]: All log files can be found below /home/teresa/.ros/log/2024-01-02-14-47-54-769601-Shunsuke-210
 [INFO] [launch]: Default logging verbosity is set to INFO
@@ -66,14 +68,14 @@ $ ros2 launch mypkg talk_listen.launch.py
 ## テスト内容
 * 2023年に上田隆一先生のロボットシステム学の授業で用いられたテストに利用するコンテナを使用しています。
 
-* [ryuichiueda/ubuntu22.04-ros2](https://hub.docker.com/repository/docker/ryuichiueda/ubuntu20.04-ros2)
+ * [ryuichiueda/ubuntu22.04-ros2](https://hub.docker.com/r/ryuichiueda/ubuntu22.04-ros2)
 
 
 ## 必要なソフトウェア
   * python
   * ROS 2 foxy
 ## 動作確認済み環境
-  * Ubuntu 20.04
+  * Ubuntu 20.04.5 LTS
 ## ライセンス表示
 このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます.
 * このパッケージのコードは、下記のスライド (CC-BY- 4.0 by Ryuichi Ueda)のものを、本人の許可を得て自身の著作としたものです.
