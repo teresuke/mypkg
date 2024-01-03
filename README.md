@@ -52,7 +52,7 @@ $ ros2 run mypkg listener
 $ ros2 launch mypkg talk_listen.launch.py
 ```
 
-と実行する。
+と実行する.
 
 ```
 [INFO] [launch]: All log files can be found below /home/teresa/.ros/log/2024-01-02-14-47-54-769601-Shunsuke-210
