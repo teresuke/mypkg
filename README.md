@@ -9,15 +9,15 @@
 * パブリッシャ(talker)
   * 実行すると0.5秒ごとにトピック(countup)を通して数字を1ずつ増やしていく.
 * サブスクライバ(listener)
-  * トピック(countup)からメッセージを受け取り、talker.pyから受け取った内容を表示する.
+  * トピック(countup)からメッセージを受け取り、ログを表示する.
 ## トピック(countup)
   * ROS2内でノードを通信するときに使うデータの経路のこと.
-  * トピック(countup)は16ビット符号付き整数データであり、talker.pyノードからのデータを生成してlistener.pyから受けとり、ログに表示する.
+  * トピック(countup)は16ビット符号付き整数データであり、talker.pyからのデータを生成してlistener.pyから受けとり、ログを表示する.
 
 ## 実行方法
 ➀ 2つのターミナルを開く.2つのターミナルを端末1、端末2とする.
 
-➁　端末1に
+➁ 端末1に
 ```
 $ ros2 run mypkg talker
 ```
@@ -27,7 +27,7 @@ $ ros2 run mypkg talker
 ```
 何も出ない.
 
-➂  端末2に
+➂ 端末2に
 ```
 $ ros2 run mypkg listener
 ```
@@ -66,7 +66,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 ```
 
 ## テスト内容
-* 2023年に上田隆一先生のロボットシステム学の授業で用いられたテストに利用するコンテナを使用しています.
+* 以下のコンテナを使用しています.
   * [ryuichiueda/ubuntu22.04-ros2](https://hub.docker.com/r/ryuichiueda/ubuntu22.04-ros2)
 
 
