@@ -3,15 +3,15 @@
 [![test](https://github.com/teresuke/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/teresuke/mypkg/actions/workflows/test.yml)
 
 ## 本リポジトリについて
-このリポジトリはtalkerとlistenerとの間で通信をするROS 2のパッケージです.
+talkerとlistenerとの間で通信をするROS 2のパッケージです.
 
-## ノード 
-* パブリッシャ(talker)
+ 
+## パブリッシャ(talker)
   * 実行すると0.5秒ごとにトピック(countup)を通して数字を1ずつ増やしていく.
-* サブスクライバ(listener)
+## サブスクライバ(listener)
   * トピック(countup)からメッセージを受け取り、ログを表示する.
 ## トピック(countup)
-  * ROS2内でノードを通信するときに使うデータの経路のこと.
+  * ROS2内でノードを通信するときに使うデータの経路のことを指します.
   * トピック(countup)は16ビット符号付き整数データであり、talker.pyが生成したデータをlistener.pyが受けとり、ログを表示する.
 
 ## 実行方法
@@ -65,15 +65,14 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1704174477.126173443] [listener]: Listen: 3
 ```
 
-## テスト内容
+## テスト環境
 * 以下のコンテナを使用しています.
   * [ryuichiueda/ubuntu22.04-ros2](https://hub.docker.com/r/ryuichiueda/ubuntu22.04-ros2)
 
 
-## 必要なソフトウェア
+## 動作確認済み環境
   * python
   * ROS 2 foxy
-## 動作確認済み環境
   * Ubuntu 20.04.5 LTS
 ## ライセンス表示
 このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます.
