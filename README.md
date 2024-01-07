@@ -7,31 +7,31 @@ talkerとlistenerとの間で通信をするROS 2のパッケージです.
 
  
 ## パブリッシャ(talker)
-  * 実行すると0.5秒ごとにトピック(countup)を通して数字を1ずつ増やしていく.
+  * 実行すると0.5秒ごとにトピック(countup)を通して数字を1ずつ増やしていきます.
 ## サブスクライバ(listener)
-  * トピック(countup)からメッセージを受け取り、ログを表示する.
+  * トピック(countup)からメッセージを受け取り、ログを表示します.
 ## トピック(countup)
   * ROS2内でノードを通信するときに使うデータの経路のことを指します.
-  * トピック(countup)は16ビット符号付き整数データであり、talker.pyが生成したデータをlistener.pyが受けとり、ログを表示する.
+  * トピック(countup)は16ビット符号付き整数データであり、talker.pyが生成したデータをlistener.pyが受けとり、ログを表示します.
 
 ## 実行方法
-➀ 2つのターミナルを開く.2つのターミナルを端末1、端末2とする.
+➀ 2つのターミナルを開く.2つのターミナルを端末1、端末2とします.
 
 ➁ 端末1に
 ```
 $ ros2 run mypkg talker
 ```
-と実行する.
+と実行します.
 ```
 
 ```
-何も出ない.
+何も出ません.
 
 ➂ 端末2に
 ```
 $ ros2 run mypkg listener
 ```
-と実行する.
+と実行します.
 
 ④ 実行結果
 
@@ -52,7 +52,7 @@ $ ros2 run mypkg listener
 $ ros2 launch mypkg talk_listen.launch.py
 ```
 
-と実行する.
+と実行します.
 
 ```
 [INFO] [launch]: All log files can be found below /home/teresa/.ros/log/2024-01-02-14-47-54-769601-Shunsuke-210
