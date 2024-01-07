@@ -1,4 +1,4 @@
-# SPDX=FileCopyrightText: 2023 Shunsuke Otani
+# SPDX-FileCopyrightText: 2023 Shunsuke Otani
 # SPDX-License-Identifier: BSD-3-Clause
 
 import launch
